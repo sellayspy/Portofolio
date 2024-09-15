@@ -1,0 +1,135 @@
+header {
+  background-color: #0a192f;
+  height: 100vh;
+  background-position: center center;
+  position: relative;
+  font-family: "Kanit", sans-serif;
+  letter-spacing: 5px;
+}
+
+.header-jumbotron {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.header-jumbotron > img {
+  width: 280px;
+  border: 5px solid skyblue;
+  border-radius: 100%;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+}
+
+.header-jumbotron > .header-text > h4 {
+  color: #fff;
+  margin: 20px 0px 0px 0px;
+  padding: 0px;
+  font-size: 2.5rem;
+}
+
+.header-jumbotron > .header-text > h4 > span {
+  position: relative;
+}
+
+.sec-text {
+  background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sec-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #0a192f;
+  border-left: 2px solid #4070f4;
+  animation: animated 4s steps(12) infinite;
+}
+@keyframes animated {
+  40%,
+  60% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+.header-jumbotron > .header-text > h3 {
+  position: relative;
+  color: #0e3742; /* Warna awal sebelum animasi */
+  margin: 10px 0px 0px 0px;
+  padding: 0px;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  line-height: 0.7em;
+  outline: none;
+  animation: animate 5s linear forwards; /* Menggunakan forwards agar berhenti di akhir */
+}
+
+@keyframes animate {
+  0% {
+    color: #0e3742; /* Warna teks awal */
+    text-shadow: none; /* Tidak ada bayangan teks di awal */
+  }
+  100% {
+    color: #fff; /* Warna teks saat menyala */
+    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4,
+      0 0 80px #03bcf4, 0 0 160px #03bcf4; /* Efek cahaya di akhir animasi */
+  }
+}
+
+.header-jumbotron > .header-text > p {
+  padding: 15px;
+  margin: 0px 5px 20px 5px;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.socialMedia {
+  color: #fff;
+  display: flex;
+  gap: 20px;
+}
+
+.socialMedia > a {
+  background-color: #222831;
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+.socialMedia > a > svg {
+  height: 30px;
+  width: auto;
+}
+.socialMedia > a:hover {
+  background-color: #aa392d;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 1000px) {
+  .socialMedia > a {
+    width: 60px;
+    height: 60px;
+  }
+
+  .socialMedia > a > svg {
+    height: 30px;
+    width: auto;
+  }
+}
