@@ -33,10 +33,10 @@ const Navbar = () => {
               <HashLink to="/#service">Service</HashLink>
             </li>
             <li>
-              <HashLink to="/#experience">Skills</HashLink>
+              <HashLink to="/#about">About</HashLink>
             </li>
             <li>
-              <HashLink to="/#contact">Contact</HashLink>
+              <HashLink to="/#experience">Skills</HashLink>
             </li>
           </ul>
         </div>

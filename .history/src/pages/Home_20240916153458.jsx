@@ -15,8 +15,8 @@ function Home() {
       <Service />
       <Portfolio />
       <Experience />
-      <Contact />
       <About />
+      <Contact />
       <Footer />
     </>
   );

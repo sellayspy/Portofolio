@@ -1,0 +1,17 @@
+.contact-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4.2rem;
+}
+
+.contact-form from {
+  position: relative;
+  width: 600px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 20px;
+}

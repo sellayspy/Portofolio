@@ -24,7 +24,7 @@
 .row > .item > a > img {
   width: 100%;
   border-radius: 10px;
-  margin-bottom: 1rem;
+  margin-bottom: 1.4rem;
 }
 
 .grid .item {
@@ -34,11 +34,6 @@
   box-shadow: 0 0 5px #fff;
   padding: 20px;
   transition: all 0.5s ease;
-}
-.grid .item:hover {
-  border: 1px solid #fff;
-  transform: translateY(-5px) scale(1.03);
-  cursor: pointer;
 }
 
 @media only screen and (max-width: 1000px) {

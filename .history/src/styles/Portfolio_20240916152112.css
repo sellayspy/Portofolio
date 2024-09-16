@@ -35,7 +35,8 @@
   padding: 20px;
   transition: all 0.5s ease;
 }
-.grid .item:hover {
+
+.item::hover {
   border: 1px solid #fff;
   transform: translateY(-5px) scale(1.03);
   cursor: pointer;

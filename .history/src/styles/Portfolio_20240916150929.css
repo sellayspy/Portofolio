@@ -1,0 +1,28 @@
+#portfolio {
+  background-color: #000000;
+  color: #fff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid .item a {
+  text-decoration: none;
+}
+
+.grid > .item > a > img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1.4rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .grid {
+    grid-template-columns: 45% 45%;
+  }
+}
