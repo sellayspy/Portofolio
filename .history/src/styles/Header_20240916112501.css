@@ -1,0 +1,254 @@
+:root {
+  --bg-color: #081b29;
+  --second-bg-color: #112e43;
+  --text-color: #ededed;
+  --main-color: #00abf0;
+}
+
+header {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 10rem 9% 2rem;
+}
+
+header {
+  background: url(../assets/background.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.header-jumbotron {
+  width: 60rem;
+  padding: 10rem 0;
+}
+
+.header-jumbotron h1 {
+  font-size: 4rem;
+  line-height: 1;
+}
+
+.animated-tex {
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.3);
+  color: #7f7f7;
+}
+.animated-tex:hover {
+  color: #fc0075;
+  color: #ff419a;
+  transform: scale(3);
+  text-shadow: 0 0 5px #ff1683, 0 0 25px #fd3592;
+  -webkit-text-stroke: 0.1rem #ff56a4;
+}
+
+.header-jumbotron h2 {
+  margin-top: -20px;
+  font-size: 3rem;
+  color: transparent;
+  -webkit-text-stroke: 0.7px var(--main-color);
+  line-height: 1;
+}
+
+.type-animation {
+  background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header-jumbotron p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.socialMedia {
+  color: #fff;
+  display: flex;
+  gap: 3rem;
+}
+
+.socialMedia a {
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  padding: 20px 20px;
+  transition: 0.5s;
+}
+.socialMedia a:hover {
+  background: #1e9bff;
+  box-shadow:
+  transform: scale(1.5);
+}
+
+.socialMedia > a > svg {
+  height: 35px;
+  width: auto;
+}
+
+/* 
+.socialMedia > a {
+  background: transparent;
+  color: var(--bg-color);
+  border-radius: 50%;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease-in-out;
+}
+
+.socialMedia > a::after {
+  position: absolute;
+  border-radius: 50%;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: var(--main-color);
+  z-index: -1;
+}
+
+.socialMedia > a > svg {
+  height: 35px;
+  width: auto;
+}
+
+.socialMedia > a {
+  background-color: #222831;
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.socialMedia > a:hover {
+  background-color: #aa392d;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  transform: scale(1.2);
+} */
+
+/*
+.socialMedia > a:hover {
+  background-color: #aa392d;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  transform: scale(1.2);
+} */
+
+/* .header-jumbotron > img {
+  width: 280px;
+  border: 5px solid skyblue;
+  border-radius: 100%;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+}
+
+.header-jumbotron > .header-text > .animated-tex {
+  color: #fff;
+  margin: 20px 0px 0px 0px;
+  padding: 0px;
+  font-size: 2.5rem;
+}
+
+.animated-tex span {
+  position: relative;
+}
+
+.animated-tex span::before {
+  content: "Student";
+  background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: words 20s infinite;
+}
+
+.animated-tex span::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: #0a192f;
+  border-left: 2px solid #e03fd8;
+  right: -2px;
+  animation: cursor 0.8s infinite, typing 20s steps(14) infinite;
+}
+@keyframes cursor {
+  to {
+    border-left: 2px solid #fff;
+  }
+}
+@keyframes words {
+  0%,
+  34% {
+    content: "Programmer";
+  }
+  25%,
+  68% {
+    content: "Designer";
+  }
+  69%,
+  100% {
+    content: "Gamer";
+  }
+}
+@keyframes typing {
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
+    width: 0;
+  }
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
+    width: calc(100% + 8px);
+  }
+}
+
+.header-jumbotron > .header-text > h3 {
+  position: relative;
+  color: #0e3742; 
+  margin: 10px 0px 0px 0px;
+  padding: 0px;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  line-height: 0.7em;
+  outline: none;
+  animation: animate 5s linear forwards; 
+}
+
+@keyframes animate {
+  0% {
+    color: #0e3742; 
+    text-shadow: none; 
+  }
+  100% {
+    color: #fff; 
+    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4,
+      0 0 80px #03bcf4, 0 0 160px #03bcf4; 
+  }
+}
+
+.header-jumbotron > .header-text > p {
+  padding: 15px;
+  margin: 0px 5px 20px 5px;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+} */
