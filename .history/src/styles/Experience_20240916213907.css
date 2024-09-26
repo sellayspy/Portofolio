@@ -1,0 +1,19 @@
+#experience {
+  background-color: #f0f0f0;
+  position: relative;
+}
+
+.vertical-timeline-element-title {
+  color: #333333; /* Hitam untuk judul */
+}
+.vertical-timeline-element-subtitle {
+  color: #666666; /* Abu-abu gelap untuk subtitle */
+}
+
+.vertical-timeline-element:hover {
+  box-shadow: 0 0 10px rgba(0, 224, 255, 0.5); /* Shadow cyan saat hover */
+  transform: translateY(-5px); /* Efek mengangkat */
+}
+.vertical-timeline::before {
+  background: #00e0ff; /* Warna cyan untuk garis timeline */
+}

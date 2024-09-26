@@ -1,0 +1,132 @@
+:root {
+  --bg-color: #081b29;
+  --second-bg-color: #112e43;
+  --text-color: #ededed;
+  --main-color: #00abf0;
+}
+
+header {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 10rem 9% 2rem;
+}
+
+header {
+  background: url(../assets/background.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.header-jumbotron {
+  width: 60rem;
+  padding: 10rem 0;
+}
+
+.header-jumbotron h1 {
+  font-size: 4rem;
+  line-height: 1;
+}
+
+.animated-tex {
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.3);
+  color: #7f7f7;
+}
+.animated-tex:hover {
+  color: ##1e9bff;
+  color: ##1e9bff;
+  transform: scale(3);
+  text-shadow: 0 0 5px #1e9bff, 0 0 25px #1e9bff;
+  -webkit-text-stroke: 0.1rem #ff56a4;
+}
+
+.header-jumbotron h2 {
+  margin-top: -20px;
+  font-size: 3rem;
+  color: transparent;
+  -webkit-text-stroke: 0.7px var(--main-color);
+  line-height: 1;
+}
+
+.type-animation {
+  background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header-jumbotron p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.socialMedia {
+  color: #fff;
+  display: flex;
+  gap: 3rem;
+}
+
+.socialMedia a {
+  position: relative;
+  background: #fff;
+  color: #fff;
+  border-radius: 50%;
+  padding: 20px 20px;
+  transition: 0.5s;
+}
+.socialMedia a:hover {
+  background: #1e9bff;
+  color: #1e9bff;
+  box-shadow: 0 0 25px #1e9bff;
+  transform: scale(1.5);
+}
+.socialMedia a::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: black;
+  border-radius: 50%;
+}
+
+.socialMedia > a > span > svg {
+  height: 35px;
+  width: auto;
+}
+
+.socialMedia a span {
+  position: relative;
+  z-index: 1;
+}
+
+.mySkill {
+  color: #fff;
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.mySkill span {
+  position: relative;
+  background: #fff;
+  color: #fff;
+  border-radius: 50%;
+  padding: 20px 20px;
+  transition: 0.5s;
+}
+.mySkill span:hover {
+  background: #1e9bff;
+  color: #1e9bff;
+  box-shadow: 0 0 25px #1e9bff;
+  transform: scale(1.5);
+}
+.mySkill span::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: black;
+  border-radius: 50%;
+}
+.mySkill span {
+  position: relative;
+  z-index: 1;
+}
